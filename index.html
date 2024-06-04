@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allarme - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Allarme di sicurezza</h1>
+        <hr>
+        <navbar>
+            <a href="index.html" class="current-page">Home</a>
+            <a href="relazione.html">Relazione</a>
+        </navbar>
+        <hr>
+        <p>
+          Ti spareranno? ... Scopriamolo insieme
+        </p>
+    </header>
+
+    <main>
+        <form action="02.06.2024.php" method="post">
+            <fieldset>
+                <legend>Inserire la distanza:</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="distanza" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="invia" value="Invia">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <img src="vuoto.png" width="1280" height="720" alt="Immagine distanza vuoto">
+        
+    </main>
+
+    <button id="scrollToBottomBtn">Visualizza l'immagine</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
+        
+            scrollToBottomBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 - Carlesso, Cecchin, Tognonato - Il sito "Allarme di sicurezza". Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
